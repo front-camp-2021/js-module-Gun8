@@ -1,0 +1,23 @@
+%vertical-align{
+  display: flex;
+  align-items: center;
+}
+
+%btn-pre-setting{
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+%shadowed-box{
+  background: #FFFFFF;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.135216);
+  border-radius: 8px;
+}
+
+@mixin bg-img-centered($url,$width,$height){
+  background: url($url) no-repeat center center;
+  background-size: contain;
+  width: $width;
+  height: $height;
+}

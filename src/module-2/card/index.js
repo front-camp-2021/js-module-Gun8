@@ -21,7 +21,38 @@ export default class Card {
     this.render();
   }
 
+  getTemplate () {
+    return `<div class="item" id = ${this.id}>
+        <div class="item__img" style="background-image: url(${this.images[0]});"></div>
+        <div class="item__inform">
+          <div class="item__rating">
+            <span>${this.rating}</span>
+            <img src="img/star.svg" alt="star">
+          </div>
+          <div class="item__price">$${this.price}</div>
+        </div>
+        <div class="item__description">
+          <h2>${this.brand}</h2>
+          <p>${this.title}</p>
+        </div>
+        <div class="item__buttons">
+          <button>
+            <img src="img/black-heart.svg" alt="like">
+            wishlist
+          </button>
+          <button>
+            <img src="img/shopping-bag.png" alt="like">
+            add to cart
+          </button>
+        </div>
+      </div>`
+  }
+
   render () {
-    // ... your logic
+      const card = document.createElement('div');
+
+      card.innerHTML = this.getTemplate();
+
+      this.element = card.firstChild;
   }
 }
