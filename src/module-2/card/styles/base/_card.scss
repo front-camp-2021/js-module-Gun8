@@ -1,10 +1,60 @@
 @use './colors' as *;
 @use './utils' as *;
 
+.item-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 2%;
+
+  &-container{
+    margin-left: 2rem;
+    width: 100%;
+  }
+
+  &-header{
+    @extend %vertical-align;
+    justify-content: space-between;
+
+    &__counter{
+      font-size: 1.125rem;
+      margin: 0;
+    }
+
+    &__like-btn{
+      @extend %btn-pre-setting;
+      @extend %shadowed-box;
+      background: $bg-primary;
+      padding: 0.813rem 1rem 0.625rem;
+    }
+  }
+
+  &-search{
+    @extend %shadowed-box;
+    position: relative;
+    margin-top: 1.625rem;
+
+    input{
+      @extend %btn-pre-setting;
+      width: 90%;
+      padding: 1rem 0 1rem 2rem;
+      font-size: 1.375rem;
+      color: $text-primary;
+    }
+
+    img{
+      position: absolute;
+      top: 50%;
+      right: 1.375rem;
+      transform: translateY(-50%);
+    }
+  }
+}
+
 .item{
   @extend %shadowed-box;
   padding-top: 2rem;
   width: 32%;
+  margin-right: 1%;
   min-width: 21.5rem;
   margin-top: 1.75rem;
 
