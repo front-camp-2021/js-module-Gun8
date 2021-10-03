@@ -5,6 +5,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+  <link rel="stylesheet" href="../../module-2/card/style.css">
 </head>
 
 <body>
@@ -40,6 +41,7 @@
 
     filtersList.element.addEventListener('change', event => {
       console.error('event', event.target.value);
+      filtersList.check(event.target);
     });
   </script>
 </body>
