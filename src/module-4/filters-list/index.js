@@ -51,8 +51,8 @@ export default class FiltersList {
     return `
     <li class="filters__list-item">
             <div>
-              <input type="checkbox" value="${value}" name="${this.state.title}" id="${value}">
-              <label for="${value}">
+              <input type="checkbox" value="${value.split("=")[1]}" name="${value.split("=")[0]}" id="${value.split("=")[1]}">
+              <label for="${value.split("=")[1]}">
                 <span class="filters__checkbox"></span>
                 <span class="filters__val">${title}</span>
               </label>

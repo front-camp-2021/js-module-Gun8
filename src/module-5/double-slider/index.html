@@ -13,7 +13,9 @@
 <script type="module">
   import DoubleSlider from './index.js';
 
-  const slider = new DoubleSlider();
+  const slider = new DoubleSlider({
+    filterName: "Price"
+  });
 
   root.append(slider.element);
 </script>

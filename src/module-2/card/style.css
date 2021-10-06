@@ -14,18 +14,18 @@ body {
   color: #2C2C2C;
 }
 
-.item-list-header, .item__inform, .item__rating, .item__buttons button {
+.filters__header, .filters__list-item, .filters__list-item label, .item-list-header, .item__inform, .item__rating, .item__buttons button {
   display: flex;
   align-items: center;
 }
 
-.item-list-header__like-btn, .item-list-search input, .item__buttons button {
+.filters__hide-btn, .filters__reset-btn, .item-list-header__like-btn, .item-list-search input, .item__buttons button {
   border: none;
   outline: none;
   cursor: pointer;
 }
 
-.item-list-header__like-btn, .item-list-search, .item {
+.filters__hide-btn, .filters__content, .filters__reset-btn, .item-list-header__like-btn, .item-list-search, .item {
   background: #FFFFFF;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.135216);
   border-radius: 8px;
@@ -141,6 +141,88 @@ body {
 }
 .item__buttons button:nth-child(2) img {
   margin-right: 0.75rem;
+}
+
+.filters__checkbox, .filters__radio {
+  display: inline-block;
+  margin-right: 0.75rem;
+}
+
+.filters {
+  min-width: 22rem;
+  width: 30%;
+}
+.filters__header {
+  justify-content: space-between;
+}
+.filters__name {
+  color: #2C2C2C;
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.filters__hide-btn {
+  padding: 0.75rem 1rem;
+}
+.filters__content {
+  margin-top: 1rem;
+  padding-top: 1.188rem;
+  height: calc(100% - 6.625rem - 1.75rem - 2px);
+}
+.filters__item {
+  min-width: 18rem;
+  width: 66%;
+  margin-left: 10%;
+}
+.filters__list-name {
+  margin: 0;
+  font-weight: 600;
+  font-size: 1.125rem;
+}
+.filters__list {
+  list-style-type: none;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 1rem 0 1.4rem;
+  padding: 0 0 1.75rem 0;
+  border-bottom: 1px solid #D6D6D6;
+}
+.filters__list-item {
+  justify-content: space-between;
+  margin-bottom: 1.125rem;
+}
+.filters__list-item input {
+  display: none;
+}
+.filters__radio {
+  background: url("img/circle.svg") no-repeat center center;
+  background-size: contain;
+  width: 1.188rem;
+  height: 1.063rem;
+}
+.filters__radio_checked {
+  background-image: url("img/active-circle.svg");
+}
+.filters__checkbox {
+  background: url("img/square.svg") no-repeat center center;
+  background-size: contain;
+  width: 1.313rem;
+  height: 1.125rem;
+}
+.filters__checkbox_checked {
+  background-image: url("img/active-square.svg");
+}
+.filters__val {
+  cursor: text;
+}
+.filters__reset-btn {
+  background: #6F64F8;
+  color: #FFFFFF;
+  width: 100%;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,7 +3,7 @@ export default class CardsList {
     this.data = data;
     this.Component = Component;
 
-    this.render(this.data);
+    this.render();
   }
 
   getTemplate (){
