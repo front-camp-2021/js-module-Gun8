@@ -5,7 +5,7 @@ export default class DoubleSlider {
   constructor({
                 min = 100,
                 max = 200,
-                formatValue = value => value,
+                formatValue = value => '$' + value,
                 selected = {
                   from: min,
                   to: max
@@ -32,19 +32,30 @@ export default class DoubleSlider {
     this.onMouseUp = this.onMouseUp.bind(this);
   }
 
-  getTemplate() {
+  getTemplate = () => {
+    const {filterName} = this.state;
     return `
-        <div class="range-slider">
-           <span>$${this.state.selected.from}</span>
-              <div class="range-slider__inner" data-element="body">
-                <span data-element="progress" class="range-slider__progress"></span>
-                <span data-element="thumbLeft" class="range-slider__thumb-left"></span>
-                <span data-element="thumbRight" class="range-slider__thumb-right"></span>
-              </div>
-           <span>$${this.state.selected.to}</span> 
-        </div>
+        <div class="filters__item">
+          <h3 class="filters__list-name">${filterName}</h3>
+          <div class = "filters__list">
+            <div class="range-slider" data-element="body">${this.getSlider()}</div>
+          </div> 
+        </div>       
     `;
-  }
+  };
+
+  getSlider = () => {
+    const {formatValue, selected} = this.state;
+    return `
+        <span data-element="from">${formatValue(selected.from)}</span>
+        <div class="range-slider__inner" data-element="slider">
+          <span data-element="progress" class="range-slider__progress"></span>
+          <span data-element="thumbLeft" class="range-slider__thumb-left"></span>
+          <span data-element="thumbRight" class="range-slider__thumb-right"></span>
+        </div>
+        <span data-element="to">${formatValue(selected.to)}</span>
+    `
+  };
 
   render() {
     const wrapper = document.createElement('div');
@@ -55,8 +66,8 @@ export default class DoubleSlider {
   }
 
   updateRange = (from,to) => {
-    this.element.firstElementChild.innerHTML = '$' + from;
-    this.element.lastElementChild.innerHTML = '$' + to;
+    this.subElements.from.innerHTML = this.state.formatValue(from);
+    this.subElements.to.innerHTML = this.state.formatValue(to);
   };
 
   update({
@@ -78,8 +89,20 @@ export default class DoubleSlider {
       precision,
       filterName
     };
-    this.render();
+
+    this.subElements.body.innerHTML = '';
+
+    this.subElements.body.innerHTML = this.getSlider();
   }
+
+  reset = () => {
+    const {min, max} = this.state;
+
+    this.state.selected.from = min;
+    this.state.selected.to = max;
+
+    this.update(this.state);
+  };
 
   getSubElements() {
     const result = {};
@@ -97,27 +120,29 @@ export default class DoubleSlider {
   onMouseUp(){
     const thumbLeft = this.subElements.thumbLeft;
     const thumbRight= this.subElements.thumbRight;
-    const body = this.subElements.body;
-    const {min,max} = this.state;
+    const slider = this.subElements.slider;
+    const {min,max,precision} = this.state;
 
     document.removeEventListener('mouseup', this.onMouseUp);
     document.removeEventListener('mousemove', this.onMouseMoveLeftThumb);
     document.removeEventListener('mousemove', this.onMouseMoveRightThumb);
 
-    this.state.selected.from = Math.round(thumbLeft.offsetLeft / body.offsetWidth * (max - min) + min);
-    this.state.selected.to = Math.round(thumbRight.offsetLeft / body.offsetWidth * (max - min) + min);
+    this.state.selected.from = Math.round((thumbLeft.offsetLeft / slider.offsetWidth * (max - min) + min)
+                                          * Math.pow(10,precision)) / Math.pow(10,precision);
+    this.state.selected.to = Math.round((thumbRight.offsetLeft / slider.offsetWidth * (max - min) + min)
+                                            * Math.pow(10,precision)) / Math.pow(10,precision);
     this.shift = null;
   }
 
   onMouseMoveLeftThumb(){
-    const {min,max, selected} = this.state;
-    const body = this.subElements.body;
+    const {min,max, selected,precision} = this.state;
+    const slider = this.subElements.slider;
     const thumbRight = this.subElements.thumbRight;
     const thumbLeft = this.subElements.thumbLeft;
     const progress = this.subElements.progress;
     const rightEdge = thumbRight.offsetLeft;
 
-    let newLeft = ((selected.from - min)/(max - min)) * body.offsetWidth + event.clientX - this.shift;
+    let newLeft = ((selected.from - min)/(max - min)) * slider.offsetWidth + event.clientX - this.shift;
 
     if (newLeft < 0) {
       newLeft = 0;
@@ -130,35 +155,37 @@ export default class DoubleSlider {
     thumbLeft.style.left =   newLeft + 'px';
     progress.style.left =   newLeft + 'px';
 
-    const from = Math.round(newLeft / body.offsetWidth * (max - min) + min );
-    const to = Math.round(rightEdge / body.offsetWidth * (max - min) + min);
+    const from = Math.round((newLeft / slider.offsetWidth * (max - min) + min) * Math.pow(10,precision)) / Math.pow(10,precision);
+    const to = Math.round((rightEdge / slider.offsetWidth * (max - min) + min) * Math.pow(10,precision)) /Math.pow(10,precision);
     this.updateRange(from, to);
   };
 
   onMouseMoveRightThumb(){
-    const {min,max, selected} = this.state;
-    const body = this.subElements.body;
+    const {min,max, selected,precision} = this.state;
+    const slider = this.subElements.slider;
     const thumbRight = this.subElements.thumbRight;
     const thumbLeft = this.subElements.thumbLeft;
     const progress = this.subElements.progress;
     const leftEdge = thumbLeft.offsetLeft;
     const thumbWidth = thumbLeft.offsetWidth;
 
-    let newRight = ((max - selected.to)/(max - min)) * body.offsetWidth - event.clientX + this.shift;
+    let newRight = ((max - selected.to)/(max - min)) * slider.offsetWidth - event.clientX + this.shift;
 
     if (newRight <= 0) {
       newRight = 0;
     }
 
-    if (body.offsetWidth - newRight < leftEdge + thumbWidth) {
-      newRight = body.offsetWidth - leftEdge - thumbWidth ;
+    if (slider.offsetWidth - newRight < leftEdge + thumbWidth) {
+      newRight = slider.offsetWidth - leftEdge - thumbWidth ;
     }
 
     thumbRight.style.right =   newRight + 'px';
     progress.style.right =   newRight + 'px';
 
-    const from = Math.round((leftEdge + thumbWidth) / body.offsetWidth * (max - min) + min );
-    const to = Math.round(newRight / body.offsetWidth * ( min - max) + max);
+    const from = Math.round(((leftEdge + thumbWidth) / slider.offsetWidth * (max - min) + min)
+                            * Math.pow(10,precision)) / Math.pow(10,precision);
+    const to = Math.round((newRight / slider.offsetWidth * ( min - max) + max)
+                            * Math.pow(10,precision)) / Math.pow(10,precision);
 
     this.updateRange(from, to);
   }

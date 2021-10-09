@@ -1,12 +1,13 @@
 import FiltersList from '../filters-list/index.js';
+import DoubleSlider from '../../module-5/double-slider/index.js'
 
 export default class SideBar {
   element;
   subElements;
-  constructor (categoriesFilter = [], brandFilter = []) {
+  constructor ({filters = {}, sliders = {}} = {}) {
     this.state = {
-      categoriesFilter: categoriesFilter,
-      brandFilter: brandFilter
+      filters: filters,
+      sliders: sliders
     };
 
     this.render();
@@ -50,9 +51,17 @@ export default class SideBar {
     this.subElements = result;
   }
 
-  update(filters = {}){
+  update({filters = {}, sliders = {}} = {}){
+    Object.values(sliders).forEach(slider => {
+      const doubleSlider = new DoubleSlider(slider);
+      this.subElements.body.append(doubleSlider.element);
+
+      this.subElements.btn.addEventListener('click', () => {
+        doubleSlider.reset();
+      })
+    });
+
     Object.values(filters).forEach(list => {
-      console.log(typeof list[0].value);
       const title = list[0].value.split("=")[0].slice(0,1).toUpperCase() + list[0].value.split("=")[0].slice(1);
       const filtersList = new FiltersList({
         title: title,
