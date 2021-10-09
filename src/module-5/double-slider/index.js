@@ -93,6 +93,9 @@ export default class DoubleSlider {
     this.subElements.body.innerHTML = '';
 
     this.subElements.body.innerHTML = this.getSlider();
+
+    this.getSubElements();
+    this.onDragThumb();
   }
 
   reset = () => {

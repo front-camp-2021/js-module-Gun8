@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc5f9434-1a04-47e5-82a8-344338d34670" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-4/filters-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-4/filters-list/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-4/side-bar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-4/side-bar/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-4/side-bar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-4/side-bar/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-5/double-slider/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-5/double-slider/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/module-5/double-slider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-5/double-slider/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-5/double-slider/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-5/double-slider/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -39,11 +33,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/module-4/filters-list/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+            <state relative-caret-position="561">
+              <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -84,11 +78,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/module-5/double-slider/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1564">
-              <caret line="92" column="41" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
+            <state relative-caret-position="255">
+              <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -134,8 +128,8 @@
         <option value="$PROJECT_DIR$/src/module-5/double-slider/style.css" />
         <option value="$PROJECT_DIR$/src/module-4/side-bar/index.html" />
         <option value="$PROJECT_DIR$/src/module-4/side-bar/index.js" />
-        <option value="$PROJECT_DIR$/src/module-5/double-slider/index.js" />
         <option value="$PROJECT_DIR$/src/module-4/filters-list/index.js" />
+        <option value="$PROJECT_DIR$/src/module-5/double-slider/index.js" />
       </list>
     </option>
   </component>
@@ -239,13 +233,6 @@
               <item name="js-module-Gun8" type="b2602c69:ProjectViewProjectNode" />
               <item name="js-module-Gun8" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="module-5" type="462c0819:PsiDirectoryNode" />
-              <item name="double-slider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="js-module-Gun8" type="b2602c69:ProjectViewProjectNode" />
-              <item name="js-module-Gun8" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="module-6" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -309,12 +296,12 @@
       <updated>1633160449303</updated>
       <workItem from="1633160452169" duration="96901000" />
       <workItem from="1633606411402" duration="593000" />
-      <workItem from="1633711129479" duration="11408000" />
+      <workItem from="1633711129479" duration="11651000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="108902000" />
+    <option name="totallyTimeSpent" value="109145000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -634,17 +621,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-5/double-slider/index.js">
+    <entry file="file://$PROJECT_DIR$/src/module-4/filters-list/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1564">
-          <caret line="92" column="41" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
+        <state relative-caret-position="561">
+          <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-4/filters-list/index.js">
+    <entry file="file://$PROJECT_DIR$/src/module-5/double-slider/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="39" column="43" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="43" />
+          <caret line="96" column="23" selection-start-line="96" selection-start-column="23" selection-end-line="96" selection-end-column="23" />
         </state>
       </provider>
     </entry>
