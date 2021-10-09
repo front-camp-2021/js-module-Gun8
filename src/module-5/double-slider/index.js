@@ -65,11 +65,6 @@ export default class DoubleSlider {
     this.element = wrapper.firstElementChild;
   }
 
-  updateRange = (from,to) => {
-    this.subElements.from.innerHTML = this.state.formatValue(from);
-    this.subElements.to.innerHTML = this.state.formatValue(to);
-  };
-
   update({
            min = 100,
            max = 200,
@@ -97,6 +92,11 @@ export default class DoubleSlider {
     this.getSubElements();
     this.onDragThumb();
   }
+
+  updateRange = (from,to) => {
+    this.subElements.from.innerHTML = this.state.formatValue(from);
+    this.subElements.to.innerHTML = this.state.formatValue(to);
+  };
 
   reset = () => {
     const {min, max} = this.state;

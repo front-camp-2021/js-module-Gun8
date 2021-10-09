@@ -14,12 +14,12 @@ body {
   color: #2C2C2C;
 }
 
-.filters__header, .filters__list-item, .filters__list-item label, .item-list-header, .item__inform, .item__rating, .item__buttons button {
+.pagination__list, .filters__header, .filters__list-item, .filters__list-item label, .item-list-header, .item__inform, .item__rating, .item__buttons button {
   display: flex;
   align-items: center;
 }
 
-.filters__hide-btn, .filters__reset-btn, .item-list-header__like-btn, .item-list-search input, .item__buttons button {
+.pagination button, .filters__hide-btn, .filters__reset-btn, .item-list-header__like-btn, .item-list-search input, .item__buttons button {
   border: none;
   outline: none;
   cursor: pointer;
@@ -223,6 +223,57 @@ body {
   text-transform: uppercase;
   padding: 1rem 0;
   cursor: pointer;
+}
+
+.pagination__page-item, .pagination button {
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  font-size: 1.125rem;
+  padding: 0.5rem;
+}
+
+.pagination__page-item:hover, .pagination button:hover {
+  background-color: #DEDEDE;
+  z-index: 1;
+}
+
+.pagination {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 2.5rem 0 1.5rem 0;
+}
+.pagination__list {
+  background: #EDEDED;
+  border-radius: 20px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.pagination__page-item {
+  background: #EDEDED;
+  cursor: pointer;
+  margin-left: -0.375rem;
+}
+.pagination__page-item:first-child {
+  margin: 0;
+}
+.pagination__page-item_active {
+  background: #6F64F8;
+  color: #FFFFFF;
+  z-index: 2;
+}
+.pagination__page-item_active:hover {
+  background: #6F64F8;
+}
+.pagination__prev {
+  margin-right: 1rem;
+  background: #EDEDED url("img/pagination-left.svg") no-repeat center;
+}
+.pagination__next {
+  margin-left: 1rem;
+  background: #EDEDED url("img/pagination-right.svg") no-repeat center;
 }
 
 /*# sourceMappingURL=style.css.map */
