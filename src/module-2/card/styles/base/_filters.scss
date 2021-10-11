@@ -32,13 +32,17 @@
     @extend %shadowed-box;
     margin-top: 1rem;
     padding-top: 1.188rem;
-    height: calc(100% - 6.625rem - 1.75rem - 2px);
+    //height: calc(100% - 6.625rem - 1.75rem - 2px);
   }
 
   &__item{
     min-width: 18rem;
     width: 66%;
     margin-left: 10%;
+
+    &:last-child ul{
+      border: none;
+    }
   }
 
   &__list-name{

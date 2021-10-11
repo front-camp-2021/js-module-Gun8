@@ -15,7 +15,9 @@
   import DoubleSlider from './index.js';
 
   const slider = new DoubleSlider({
-    filterName: "Price"
+    filterName: "Price",
+    min: 53,
+    max: 85000
   });
 
   root.append(slider.element);

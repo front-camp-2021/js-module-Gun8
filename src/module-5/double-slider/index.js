@@ -5,7 +5,7 @@ export default class DoubleSlider {
   constructor({
                 min = 100,
                 max = 200,
-                formatValue = value => '$' + value,
+                formatValue = value =>  value + 'UAH',
                 selected = {
                   from: min,
                   to: max
@@ -68,7 +68,7 @@ export default class DoubleSlider {
   update({
            min = 100,
            max = 200,
-           formatValue = value => value,
+           formatValue = value => value + 'UAH',
            selected = {
              from: min,
              to: max
@@ -130,10 +130,11 @@ export default class DoubleSlider {
     document.removeEventListener('mousemove', this.onMouseMoveLeftThumb);
     document.removeEventListener('mousemove', this.onMouseMoveRightThumb);
 
-    this.state.selected.from = Math.round((thumbLeft.offsetLeft / slider.offsetWidth * (max - min) + min)
+    this.state.selected.from = Math.round(((thumbLeft.offsetLeft + 6) / slider.offsetWidth * (max - min) + min)
                                           * Math.pow(10,precision)) / Math.pow(10,precision);
     this.state.selected.to = Math.round((thumbRight.offsetLeft / slider.offsetWidth * (max - min) + min)
                                             * Math.pow(10,precision)) / Math.pow(10,precision);
+    console.log(this.state.selected.from + ' ' + this.state.selected.to);
     this.shift = null;
   }
 
@@ -160,6 +161,7 @@ export default class DoubleSlider {
 
     const from = Math.round((newLeft / slider.offsetWidth * (max - min) + min) * Math.pow(10,precision)) / Math.pow(10,precision);
     const to = Math.round((rightEdge / slider.offsetWidth * (max - min) + min) * Math.pow(10,precision)) /Math.pow(10,precision);
+
     this.updateRange(from, to);
   };
 

@@ -29,11 +29,11 @@ export default class Card {
             <span>${this.rating}</span>
             <img src="img/star.svg" alt="star">
           </div>
-          <div class="item__price">$${this.price}</div>
+          <div class="item__price">${this.price + ' UAH'}</div>
         </div>
         <div class="item__description">
-          <h2>${this.brand}</h2>
-          <p>${this.title}</p>
+          <h2>${this.title}</h2>
+          <p>${this.brand}</p>
         </div>
         <div class="item__buttons">
           <button>
@@ -53,6 +53,6 @@ export default class Card {
 
       card.innerHTML = this.getTemplate();
 
-      this.element = card.firstChild;
+      this.element = card.firstElementChild;
   }
 }

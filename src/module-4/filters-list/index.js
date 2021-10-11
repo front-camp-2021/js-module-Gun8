@@ -62,6 +62,13 @@ export default class FiltersList {
   }
 
   check(target){
+    const title = target.nextElementSibling.lastElementChild.innerHTML;
+    this.state.list.forEach(item => {
+      if(item.title === title){
+        item.checked = target.checked;
+      }
+    });
+
     if(target.checked){
       target.nextElementSibling.firstElementChild.classList.add("filters__checkbox_checked");
       return;

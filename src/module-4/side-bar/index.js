@@ -4,6 +4,7 @@ import DoubleSlider from '../../module-5/double-slider/index.js'
 export default class SideBar {
   element;
   subElements;
+  components = {filters: [],sliders: []};
   constructor ({filters = {}, sliders = {}} = {}) {
     this.state = {
       filters: filters,
@@ -54,6 +55,8 @@ export default class SideBar {
   update({filters = {}, sliders = {}} = {}){
     Object.values(sliders).forEach(slider => {
       const doubleSlider = new DoubleSlider(slider);
+      this.components.sliders.push(doubleSlider);
+
       this.subElements.body.append(doubleSlider.element);
 
       this.subElements.btn.addEventListener('click', () => {
@@ -67,6 +70,8 @@ export default class SideBar {
         title: title,
         list
       });
+      this.components.filters.push(filtersList);
+
       this.subElements.body.append(filtersList.element);
 
       filtersList.element.addEventListener('change', event => {

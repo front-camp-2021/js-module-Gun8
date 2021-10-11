@@ -3,8 +3,8 @@ export const request = async (url = '', props = {}) => {
     const response = await fetch(url.toString(), props);
     const data = await response.json();
 
-    return [data, null];
+    return data;
   } catch (error) {
-    return [null, error];
+    return error;
   }
 };

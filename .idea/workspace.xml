@@ -2,10 +2,39 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc5f9434-1a04-47e5-82a8-344338d34670" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/module-6/search/img/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module-2/card/img/chevrons-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module-2/card/img/chevrons-right.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module-2/card/styles/base/_header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module-4/side-bar/media.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module-6/main-page/img/black-heart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module-6/main-page/img/chevrons-left.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module-6/main-page/img/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module-6/main-page/img/like.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module-6/main-page/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module-6/main-page/img/search.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module-6/main-page/img/shopping-bag.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module-6/main-page/img/star.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module-6/main-page/media.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/module-6/main-page/prepare-slider/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-6/search/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-6/search/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/module-6/search/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-6/search/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/server/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-2/card/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-2/card/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-2/card/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-2/card/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-2/card/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-2/card/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-2/card/styles/base/_card.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-2/card/styles/base/_card.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-2/card/styles/base/_filters.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-2/card/styles/base/_filters.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-2/card/styles/base/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-2/card/styles/base/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-3/cards-list-v1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-3/cards-list-v1/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-4/filters-list/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-4/filters-list/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-4/side-bar/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-4/side-bar/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-4/side-bar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-4/side-bar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-5/double-slider/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-5/double-slider/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-5/double-slider/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-5/double-slider/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-5/double-slider/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-5/double-slider/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-6/main-page/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-6/main-page/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-6/main-page/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-6/main-page/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-6/main-page/prepare-filters/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-6/main-page/prepare-filters/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-6/main-page/request/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-6/main-page/request/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,50 +49,13 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/module-6/search/index.js">
+        <entry file="file://$PROJECT_DIR$/src/module-6/main-page/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="59" column="66" selection-start-line="59" selection-start-column="66" selection-end-line="59" selection-end-column="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/module-1/debounce/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-86" />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/module-6/search/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="24" column="47" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="24" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/module-1/debounce/index.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="readme.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/module-1/debounce/readme.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor />
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/module-5/pagination/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="78" column="3" lean-forward="true" selection-start-line="67" selection-start-column="2" selection-end-line="78" selection-end-column="3" />
+            <state relative-caret-position="306">
+              <caret line="99" column="42" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
+              <folding>
+                <element signature="e#0#60#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,6 +65,9 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>body</find>
+      <find>1.14</find>
+      <find>1.89</find>
+      <find>4.8</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -86,7 +81,6 @@
         <option value="$PROJECT_DIR$/src/module-1/debounce/index.js" />
         <option value="$PROJECT_DIR$/src/module-1/splitAndMerge/index.js" />
         <option value="$PROJECT_DIR$/src/module-1/weirdString/index.js" />
-        <option value="$PROJECT_DIR$/src/module-2/card/index.js" />
         <option value="$PROJECT_DIR$/src/module-2/card/styles/base/_colors.scss" />
         <option value="$PROJECT_DIR$/src/module-2/card/styles/base/_utils.scss" />
         <option value="$PROJECT_DIR$/src/module-2/card/styles/base/_pre-settings.scss" />
@@ -100,22 +94,32 @@
         <option value="$PROJECT_DIR$/src/module-2/card/index.html" />
         <option value="$PROJECT_DIR$/src/module-3/cards-list-v1/index.spec.js" />
         <option value="$PROJECT_DIR$/src/module-3/cards-list-v1/index.html" />
-        <option value="$PROJECT_DIR$/src/module-2/card/styles/base/_card.scss" />
-        <option value="$PROJECT_DIR$/src/module-3/cards-list-v1/index.js" />
-        <option value="$PROJECT_DIR$/src/module-2/card/styles/base/_filters.scss" />
-        <option value="$PROJECT_DIR$/src/module-4/filters-list/index.html" />
-        <option value="$PROJECT_DIR$/src/module-5/double-slider/index.html" />
-        <option value="$PROJECT_DIR$/src/module-5/double-slider/style.css" />
-        <option value="$PROJECT_DIR$/src/module-4/side-bar/index.html" />
-        <option value="$PROJECT_DIR$/src/module-4/side-bar/index.js" />
-        <option value="$PROJECT_DIR$/src/module-4/filters-list/index.js" />
-        <option value="$PROJECT_DIR$/src/module-5/double-slider/index.js" />
         <option value="$PROJECT_DIR$/src/module-5/pagination/index.html" />
-        <option value="$PROJECT_DIR$/src/module-2/card/styles/base/index.scss" />
         <option value="$PROJECT_DIR$/src/module-2/card/styles/base/_pagination.scss" />
         <option value="$PROJECT_DIR$/src/module-5/pagination/index.js" />
-        <option value="$PROJECT_DIR$/src/module-6/search/index.html" />
         <option value="$PROJECT_DIR$/src/module-6/search/index.js" />
+        <option value="$PROJECT_DIR$/src/module-6/search/index.html" />
+        <option value="$PROJECT_DIR$/src/module-2/card/styles/base/_header.scss" />
+        <option value="$PROJECT_DIR$/src/module-2/card/styles/base/index.scss" />
+        <option value="$PROJECT_DIR$/src/module-6/main-page/prepare-sliders/index.js" />
+        <option value="$PROJECT_DIR$/src/module-6/main-page/request/index.js" />
+        <option value="$PROJECT_DIR$/src/module-6/main-page/prepare-filters/index.js" />
+        <option value="$PROJECT_DIR$/src/module-4/filters-list/index.html" />
+        <option value="$PROJECT_DIR$/src/module-4/filters-list/index.js" />
+        <option value="$PROJECT_DIR$/src/module-6/main-page/index.html" />
+        <option value="$PROJECT_DIR$/src/module-3/cards-list-v1/index.js" />
+        <option value="$PROJECT_DIR$/server/db.json" />
+        <option value="$PROJECT_DIR$/src/module-6/main-page/media.css" />
+        <option value="$PROJECT_DIR$/src/module-2/card/styles/base/_card.scss" />
+        <option value="$PROJECT_DIR$/src/module-2/card/index.js" />
+        <option value="$PROJECT_DIR$/src/module-5/double-slider/index.html" />
+        <option value="$PROJECT_DIR$/src/module-4/side-bar/index.html" />
+        <option value="$PROJECT_DIR$/src/module-4/side-bar/index.js" />
+        <option value="$PROJECT_DIR$/src/module-2/card/styles/base/_filters.scss" />
+        <option value="$PROJECT_DIR$/src/module-6/main-page/prepare-slider/index.js" />
+        <option value="$PROJECT_DIR$/src/module-5/double-slider/style.css" />
+        <option value="$PROJECT_DIR$/src/module-5/double-slider/index.js" />
+        <option value="$PROJECT_DIR$/src/module-6/main-page/index.js" />
       </list>
     </option>
   </component>
@@ -141,10 +145,10 @@
     </packageJsonPaths>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="542" />
-    <option name="y" value="17" />
+    <option name="x" value="676" />
+    <option name="y" value="84" />
     <option name="width" value="649" />
-    <option name="height" value="584" />
+    <option name="height" value="629" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -228,13 +232,41 @@
               <item name="js-module-Gun8" type="b2602c69:ProjectViewProjectNode" />
               <item name="js-module-Gun8" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="module-3" type="462c0819:PsiDirectoryNode" />
+              <item name="cards-list-v1" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="js-module-Gun8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js-module-Gun8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="module-4" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="js-module-Gun8" type="b2602c69:ProjectViewProjectNode" />
               <item name="js-module-Gun8" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="module-4" type="462c0819:PsiDirectoryNode" />
+              <item name="filters-list" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="js-module-Gun8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js-module-Gun8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="module-4" type="462c0819:PsiDirectoryNode" />
+              <item name="side-bar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="js-module-Gun8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js-module-Gun8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="module-5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="js-module-Gun8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js-module-Gun8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="module-5" type="462c0819:PsiDirectoryNode" />
+              <item name="double-slider" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="js-module-Gun8" type="b2602c69:ProjectViewProjectNode" />
@@ -254,7 +286,54 @@
               <item name="js-module-Gun8" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="module-6" type="462c0819:PsiDirectoryNode" />
+              <item name="main-page" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="js-module-Gun8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js-module-Gun8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="module-6" type="462c0819:PsiDirectoryNode" />
+              <item name="main-page" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="js-module-Gun8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js-module-Gun8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="module-6" type="462c0819:PsiDirectoryNode" />
+              <item name="main-page" type="462c0819:PsiDirectoryNode" />
+              <item name="prepare-filters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="js-module-Gun8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js-module-Gun8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="module-6" type="462c0819:PsiDirectoryNode" />
+              <item name="main-page" type="462c0819:PsiDirectoryNode" />
+              <item name="prepare-slider" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="js-module-Gun8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js-module-Gun8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="module-6" type="462c0819:PsiDirectoryNode" />
+              <item name="main-page" type="462c0819:PsiDirectoryNode" />
+              <item name="request" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="js-module-Gun8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js-module-Gun8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="module-6" type="462c0819:PsiDirectoryNode" />
               <item name="search" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="js-module-Gun8" type="b2602c69:ProjectViewProjectNode" />
+              <item name="js-module-Gun8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="module-6" type="462c0819:PsiDirectoryNode" />
+              <item name="search" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -275,11 +354,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\eleks\js-module-Gun8\src\module-4\side-bar" />
+      <recent name="D:\eleks\js-module-Gun8\src\module-6\main-page\img" />
       <recent name="D:\eleks\js-module-Gun8\src\module-6\search\img" />
       <recent name="D:\eleks\js-module-Gun8\src\module-2\card\img" />
       <recent name="D:\eleks\js-module-Gun8\src\module-4\side-bar\img" />
-      <recent name="D:\eleks\js-module-Gun8\src\module-4\filters-list\img" />
-      <recent name="D:\eleks\js-module-Gun8\src\module-3\cards-list-v1" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\eleks\js-module-Gun8\src\module-2\card\img" />
@@ -311,27 +390,27 @@
       <updated>1633160449303</updated>
       <workItem from="1633160452169" duration="96901000" />
       <workItem from="1633606411402" duration="593000" />
-      <workItem from="1633711129479" duration="22412000" />
+      <workItem from="1633711129479" duration="68448000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119906000" />
+    <option name="totallyTimeSpent" value="165942000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" order="2" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22081785" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21040893" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.3724907" side_tool="true" weight="0.32991454" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.3732342" side_tool="true" weight="0.22905983" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.6275093" visible="true" weight="0.22905983" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.6267658" visible="true" weight="0.22905983" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -343,25 +422,25 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.32991454" />
     </layout>
     <layout-to-restore>
-      <window_info id="Gulp" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info id="npm" order="1" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="6" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="3" visible="true" weight="0.24981412" />
-      <window_info id="Structure" order="4" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info id="Gulp" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info id="npm" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Terminal" order="1" sideWeight="0.6275093" weight="0.32991454" />
-      <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.3724907" side_tool="true" weight="0.32991454" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="Version Control" order="3" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21040893" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32991454" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.6267658" visible="true" weight="0.22905983" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.3732342" side_tool="true" visible="true" weight="0.22905983" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="4" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,226 +450,44 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/module-4/behavior-pattern.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-153" />
+    <entry file="file://$PROJECT_DIR$/src/module-1/debounce/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fixtures/products.js">
+    <entry file="file://$PROJECT_DIR$/src/module-1/debounce/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-2/card/index.js">
+    <entry file="file://$PROJECT_DIR$/src/module-1/debounce/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-183">
-          <caret line="23" column="16" lean-forward="true" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="16" />
-        </state>
+        <state relative-caret-position="-86" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-3/cards-list-v1/index.html">
+    <entry file="file://$PROJECT_DIR$/src/module-5/pagination/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
-          <caret column="15" lean-forward="true" selection-start-column="15" selection-end-column="15" />
-          <folding>
-            <element signature="e#483#531#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="172">
+          <caret line="118" column="2" selection-start-line="118" selection-start-column="2" selection-end-line="127" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-3/cards-list-v1/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-2/card/styles/base/_utils.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="21" column="18" selection-start-line="19" selection-start-column="2" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-2/card/img/square.svg">
+    <entry file="file://$PROJECT_DIR$/src/module-6/main-page/img/home.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-2/card/img/active-square.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-4/filters-list/preview.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-4/filters-list/img/active-square.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-3/cards-list-v1/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-2/card/styles/base/_filters.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="54" column="18" lean-forward="true" selection-start-line="54" selection-start-column="18" selection-end-line="54" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-4/filters-list/index.spec.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-6/main-page/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-306" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-4/side-bar/img/chevrons-left.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-5/double-slider/preview.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-5/double-slider/range-thumb-icon.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-4/filters-list/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-4/module-plan.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-5/double-slider/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-5/double-slider/static.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="8" selection-start-line="6" selection-start-column="2" selection-end-line="14" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-5/double-slider/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-4/side-bar/config.js">
+    <entry file="file://$PROJECT_DIR$/src/module-2/card/styles/base/_pre-settings.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-4/filters-list/index.html">
+    <entry file="file://$PROJECT_DIR$/src/module-2/card/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="44" column="7" lean-forward="true" selection-start-line="41" selection-start-column="4" selection-end-line="44" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-5/double-slider/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="23" lean-forward="true" selection-start-line="17" selection-start-column="4" selection-end-line="17" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-4/side-bar/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-4/side-bar/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-85">
-          <caret line="7" column="69" selection-start-line="7" selection-start-column="69" selection-end-line="7" selection-end-column="69" />
-          <folding>
-            <element signature="e#518#551#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-4/side-bar/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#51#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-4/filters-list/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="6" lean-forward="true" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-4/side-bar/preview.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-5/double-slider/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="109" column="2" lean-forward="true" selection-start-line="109" selection-start-column="2" selection-end-line="120" selection-end-column="3" />
-        </state>
+        <state relative-caret-position="-5251" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/module-2/card/styles/base/index.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-2/card/img/pagination-right.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-2/card/img/pagination-left.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-2/card/styles/base/_pagination.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-5/pagination/preview.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-5/pagination/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-5/pagination/readme.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
+        <state relative-caret-position="102">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -600,6 +497,11 @@
           <first_editor />
           <second_editor />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-6/search/index.spec.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/module-6/search/readme.md">
@@ -613,25 +515,68 @@
     <entry file="file://$PROJECT_DIR$/src/module-6/search/preview.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/db.json">
+    <entry file="file://$PROJECT_DIR$/src/module-6/search/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1071" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-6/search/index.spec.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-6/search/img/search.svg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="66" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="66" />
+        <state relative-caret-position="221">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-1/debounce/readme.md">
+    <entry file="file://$PROJECT_DIR$/src/module-4/side-bar/config.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-6/main-page/request/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="2" lean-forward="true" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../html-css-module-Gun8/src/module-3/online-store/img/chevrons-left.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-2/card/img/pagination-left.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-2/card/img/pagination-right.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-2/card/img/shopping-bag.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-2/card/img/chevrons-right.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-6/search/img/chevrons-left.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-2/card/img/chevrons-left.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-6/main-page/img/chevrons-left.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-6/main-page/img/like.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-6/main-page/img/search.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-4/filters-list/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="44" column="7" selection-start-line="44" selection-start-column="7" selection-end-line="44" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-4/filters-list/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-4/filters-list/readme.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
@@ -639,32 +584,162 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-5/pagination/index.js">
+    <entry file="file://$PROJECT_DIR$/src/module-3/cards-list-v1/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="78" column="3" lean-forward="true" selection-start-line="67" selection-start-column="2" selection-end-line="78" selection-end-column="3" />
+        <state relative-caret-position="272">
+          <caret line="21" column="21" lean-forward="true" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-1/debounce/index.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-1/debounce/index.html">
+    <entry file="file://$PROJECT_DIR$/src/module-6/main-page/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-86" />
+        <state relative-caret-position="85">
+          <caret line="5" column="112" selection-start-line="5" selection-start-column="112" selection-end-line="5" selection-end-column="112" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-6/search/index.html">
+    <entry file="file://$PROJECT_DIR$/src/module-6/main-page/img/star.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-6/main-page/img/black-heart.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-2/card/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="24" column="47" lean-forward="true" selection-start-line="23" selection-start-column="1" selection-end-line="24" selection-end-column="47" />
+        <state relative-caret-position="4">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="52" selection-end-line="31" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-2/card/styles/base/_card.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="104" column="21" selection-start-line="104" selection-start-column="21" selection-end-line="104" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-5/double-slider/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-4/side-bar/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="40" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+          <folding>
+            <element signature="e#589#622#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/module-6/search/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="59" column="66" selection-start-line="59" selection-start-column="66" selection-end-line="59" selection-end-column="66" />
+        <state relative-caret-position="153">
+          <caret line="54" column="51" lean-forward="true" selection-start-line="54" selection-start-column="6" selection-end-line="54" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-3/cards-list-v1/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/db.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="892" column="75" selection-start-line="892" selection-start-column="75" selection-end-line="892" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-4/side-bar/media.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-2/card/styles/base/_header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-6/main-page/readme.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-5/double-slider/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="77" column="1" selection-start-line="77" selection-start-column="1" selection-end-line="77" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-4/side-bar/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="55" column="46" selection-start-line="55" selection-start-column="46" selection-end-line="55" selection-end-column="46" />
+          <folding>
+            <element signature="e#0#51#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-6/main-page/media.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-2/card/styles/base/_filters.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-6/main-page/prepare-slider/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="38" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-6/main-page/prepare-filters/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="48" selection-start-column="48" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-5/double-slider/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="163" lean-forward="true" selection-start-line="163" selection-end-line="163" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/module-6/main-page/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="99" column="42" selection-start-line="99" selection-start-column="42" selection-end-line="99" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#60#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

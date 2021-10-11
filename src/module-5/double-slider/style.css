@@ -2,8 +2,8 @@
   position: relative;
   display: inline-block;
   width: 100%;
-  height: 0.25rem;
-  margin: 0.625rem 0.875rem;
+  height: 4px;
+  margin: 10px 14px;
   background: #cfebfc;
   box-shadow: 0 0 1px #c2cfe0;
   user-select: none;
@@ -13,11 +13,11 @@
 .range-slider__thumb-left {
   position: absolute;
   top: 50%;
-  margin-top: -0.563rem;
-  height: 1.125rem;
-  width: 0.375rem;
+  margin-top: -9px;
+  height: 18px;
+  width: 6px;
   background: url("range-thumb-icon.svg") left center no-repeat;
-  background-size: contain;
+  background-size: cover;
   cursor: grab;
 }
 
@@ -30,13 +30,13 @@
 
 .range-slider__thumb-left {
   left: 0;
-  margin-left: -0.375rem;
+  margin-left: -6px;
 }
 
 .range-slider__thumb-right {
   right: 0;
   transform: rotate(180deg);
-  margin-right: -0.375rem;
+  margin-right: -6px;
 }
 
 .range-slider__progress {
@@ -54,26 +54,25 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0 3.75rem;
+  padding: 0 60px;
 }
 
 .range-slider > span {
   font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.5rem;
+  font-size: 16px;
+  line-height: 24px;
   color: #707683;
-  width: 3.75rem;
+  width: 60px;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
 }
 
 .range-slider > span:first-child {
-  left: 0;
   text-align: right;
+  left: 0;
 }
 
 .range-slider > span:last-child {
   right: 0;
-  text-align: left;
 }
