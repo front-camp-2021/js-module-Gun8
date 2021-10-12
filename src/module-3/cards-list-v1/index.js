@@ -11,7 +11,7 @@ export default class CardsList {
   }
 
   getTemplate (){
-    return `<div class="item-list" data-element="cards"></div>`
+    return '<div class="item-list" data-element="cards"></div>'
   }
 
   render(){

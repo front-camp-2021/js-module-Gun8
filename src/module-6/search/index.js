@@ -5,7 +5,6 @@ export default class Search {
   constructor(){
     this.render();
     this.getSubElements();
-    this.search();
   }
   getTemplate = () => {
     return `
@@ -37,28 +36,12 @@ export default class Search {
     this.subElements = result;
   }
 
-  search = () => {
-    this.subElements.input.addEventListener('input', this.onInput(this.onSearch, 1000))
-  };
-
   onInput = (func, delay) => {
       let timer;
       return function () {
         if(timer) clearTimeout(timer);
         timer = setTimeout(func,delay);
       }
-  };
-
-  onSearch = async () => {
-      const input = this.subElements.input;
-      const BACKEND_URL = 'http://localhost:3000';
-      const url = new URL('products', BACKEND_URL);
-
-      const response = await fetch(url);
-      const data = await response.json();
-
-      const filteredData = data.filter(item => item.title.toLowerCase().includes(input.value.toLowerCase()));
-      console.error('data', filteredData);
   };
 
   remove() {

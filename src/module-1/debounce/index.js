@@ -3,7 +3,8 @@ export const debounce = (fn, delay = 0) => {
   return function () {
     if(isWaiting) return;
 
-    let result = fn.apply(this, arguments);
+    const result = fn.apply(this, arguments);
+
     isWaiting = true;
 
     setTimeout(() => isWaiting = false,delay);

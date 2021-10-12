@@ -71,10 +71,10 @@ export default class FiltersList {
 
     if(target.checked){
       target.nextElementSibling.firstElementChild.classList.add("filters__checkbox_checked");
-      return;
     }
-
-    target.nextElementSibling.firstElementChild.classList.remove("filters__checkbox_checked");
+    else{
+      target.nextElementSibling.firstElementChild.classList.remove("filters__checkbox_checked");
+    }
   }
 
   reset(){

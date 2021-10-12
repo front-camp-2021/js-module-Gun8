@@ -28,7 +28,7 @@ export default class SideBar {
           <div class="filters__content" data-element="body"></div>
           <button class="filters__reset-btn" data-element="btn">Clear all filters</button>
         </aside>
-    `;
+     `;
   }
 
   render(){

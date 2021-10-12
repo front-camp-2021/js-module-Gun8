@@ -67,7 +67,7 @@ export default class Page {
   };
 
   getItemListContainer = () => {
-    return `<div class="item-list-container" data-element="container"></div>`;
+    return '<div class="item-list-container" data-element="container"></div>';
   };
 
   getItemListHeader = () => {
@@ -164,12 +164,24 @@ export default class Page {
 
     this.components.sliders.forEach(slider => {
       const {from,to} = slider.state.selected;
-      console.log(from);
+
       data = data.filter(item => item.price >= from && item.price <= to);
     });
+
+    data = data.filter(item => item.title.toLowerCase().includes(this.subElements.search.input.value.toLowerCase().trim()));
+
     console.log(data);
 
     return data;
+  };
+
+  getSearch = () => {
+    this.components.search = new Search();
+    this.subElements.search = this.components.search.subElements;
+
+    this.subElements.search.input.addEventListener('input', this.components.search.onInput(this.updateCardList, 1000));
+
+    return this.components.search;
   };
 
   render() {
@@ -182,6 +194,7 @@ export default class Page {
 
   update = async () => {
     const sidebar = await this.getSideBar();
+    const search = this.getSearch();
 
     this.subElements.mainPage.catalog.append(sidebar.element);
     this.subElements.mainPage.catalog.append(this.turnTextIntoElement(this.getItemListContainer()));
@@ -189,7 +202,7 @@ export default class Page {
     this.getSubElements();
 
     this.subElements.mainPage.container.append(this.turnTextIntoElement(this.getItemListHeader()));
-    this.subElements.mainPage.container.append(new Search().element);
+    this.subElements.mainPage.container.append(search.element);
 
     this.updateCardList();
 
