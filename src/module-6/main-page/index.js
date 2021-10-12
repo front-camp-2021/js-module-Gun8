@@ -101,8 +101,12 @@ export default class Page {
     this.subElements.sidebar.btn.addEventListener('click', this.updateCardList);
     this.subElements.filters.forEach(filter => filter.list.addEventListener('change',this.updateCardList));
     this.subElements.sliders.forEach(slider => {
-      slider.thumbLeft.addEventListener('mouseup',this.updateCardList);
-      slider.thumbRight.addEventListener('mouseup',this.updateCardList);
+      slider.thumbLeft.addEventListener('mousedown',() => {
+        document.addEventListener("mouseup", this.onMouseUp);
+      });
+      slider.thumbRight.addEventListener('mousedown',() => {
+        document.addEventListener("mouseup", this.onMouseUp);
+      });
     });
 
     return this.components.sidebar;
@@ -134,6 +138,11 @@ export default class Page {
     }
 
     return slidersData;
+  };
+
+  onMouseUp = () => {
+    this.updateCardList();
+    document.removeEventListener('mouseup', this.onMouseUp);
   };
 
   getSearch = () => {
