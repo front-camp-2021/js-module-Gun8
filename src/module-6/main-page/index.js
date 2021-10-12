@@ -15,6 +15,9 @@ export default class Page {
   components = {};
   pageLimit = 12;
   totalPages = 100;
+  results = 0;
+  pageIndex = 0;
+  data = {};
   filters = new URLSearchParams();
 
   constructor() {
@@ -73,7 +76,7 @@ export default class Page {
   getItemListHeader = () => {
     return `
       <div class="item-list-header">
-        <p class="item-list-header__counter">7,618 results found</p>
+        <p class="item-list-header__counter" data-element="results"></p>
         <button class="item-list-header__like-btn">
           <img src="img/like.svg" alt="like">
         </button>
@@ -133,48 +136,6 @@ export default class Page {
     return slidersData;
   };
 
-  getFilteredCardList = async () => {
-    const url = new URL('products', BACKEND_URL);
-    const data = this.filterCards(await request(url));
-    const pageData = [];
-
-    const limit = Math.min(this.pageLimit, data.length);
-
-    for(let i = 0; i < limit; i++){
-      pageData.push(data[i]);
-    }
-
-    this.components.cardList = new CardsList({data: pageData,Component: Card});
-
-
-    return this.components.cardList;
-  };
-
-  filterCards = (data) => {
-    this.components.filters.forEach(filter => {
-      const checked = filter.state.list.filter(item => item.checked);
-
-      if(checked.length !== 0){
-        const names = checked.map(item => item.value.split('=')[1]);
-        const field = checked[0].value.split('=')[0];
-
-        data = data.filter(item => names.includes(item[field]));
-      }
-    });
-
-    this.components.sliders.forEach(slider => {
-      const {from,to} = slider.state.selected;
-
-      data = data.filter(item => item.price >= from && item.price <= to);
-    });
-
-    data = data.filter(item => item.title.toLowerCase().includes(this.subElements.search.input.value.toLowerCase().trim()));
-
-    console.log(data);
-
-    return data;
-  };
-
   getSearch = () => {
     this.components.search = new Search();
     this.subElements.search = this.components.search.subElements;
@@ -204,18 +165,8 @@ export default class Page {
     this.subElements.mainPage.container.append(this.turnTextIntoElement(this.getItemListHeader()));
     this.subElements.mainPage.container.append(search.element);
 
+    this.getSubElements();
     this.updateCardList();
-
-  };
-
-  updateCardList = async () => {
-    const cardList = await this.getFilteredCardList();
-    const itemList = document.querySelector('.item-list');
-
-    if(itemList){
-      itemList.remove();
-    }
-    this.subElements.mainPage.container.append(cardList.element);
   };
 
   turnTextIntoElement(text){
@@ -225,6 +176,83 @@ export default class Page {
 
     return wrapper.firstElementChild;
   }
+
+  updateCardList = async () => {
+    const url = new URL('products', BACKEND_URL);
+    this.data = this.filterCards(await request(url));
+
+    this.results = this.data.length;
+    this.subElements.mainPage.results.innerHTML = `${this.results} results found`;
+
+    this.updatePagination();
+    this.updatePage();
+  };
+
+  filterCards = (data) => {
+    this.components.filters.forEach(filter => {
+      const checked = filter.state.list.filter(item => item.checked);
+
+      if(checked.length !== 0){
+        const names = checked.map(item => item.value.split('=')[1]);
+        const field = checked[0].value.split('=')[0];
+
+        data = data.filter(item => names.includes(item[field]));
+      }
+    });
+
+    this.components.sliders.forEach(slider => {
+      const {from,to} = slider.state.selected;
+
+      data = data.filter(item => item.price >= from && item.price <= to);
+    });
+
+    if(this.subElements.search.input.value !== ''){
+      data = data.filter(item => item.title.toLowerCase().includes(this.subElements.search.input.value.toLowerCase().trim()));
+    }
+
+    return data;
+  };
+
+  updatePage = () => {
+    this.pageIndex = this.components.pagination.pageIndex;
+
+    const itemList = document.querySelector('.item-list');
+    const pageData = [];
+    const limit = Math.min(this.pageLimit, this.results);
+    const start =  this.pageIndex * this.pageLimit;
+    console.log(this.pageIndex);
+    for(let i = 0; i < limit; i++){
+      pageData.push(this.data[i + start]);
+    }
+
+    this.components.cardList = new CardsList({data: pageData,Component: Card});
+
+    if(itemList){
+      itemList.remove();
+    }
+
+    this.subElements.mainPage.container.append(this.components.cardList.element);
+  };
+
+  updatePagination = () => {
+    const pagination = document.querySelector('.pagination');
+    const totalPages = this.results > this.pageLimit ? Math.trunc(this.results/this.pageLimit) : 1;
+
+    this.components.pagination = new Pagination({totalPages});
+    this.subElements.pagination = this.components.pagination.subElements;
+
+    this.subElements.pagination.prev.addEventListener('click',this.updatePage);
+    this.subElements.pagination.next.addEventListener('click',this.updatePage);
+    this.subElements.pagination.list.querySelectorAll('li').forEach(item => {
+      item.addEventListener('click', this.updatePage);
+    });
+
+    if(pagination){
+      pagination.remove();
+    }
+
+    this.element.append(this.components.pagination.element);
+  };
 
   getSubElements(){
     const result = {};
@@ -239,11 +267,14 @@ export default class Page {
     this.subElements.mainPage = result;
   }
 
-  remove () {
-    // ... your logic
+  remove() {
+    if (this.element) {
+      this.element.remove();
+    }
   }
 
-  destroy () {
-    // ... your logic
+  destroy() {
+    this.remove();
+    this.element = null;
   }
 }

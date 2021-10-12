@@ -1,7 +1,6 @@
 export default class Pagination {
   element;
   subElements;
-  start = 0;
 
   constructor({
     totalPages = 10,
