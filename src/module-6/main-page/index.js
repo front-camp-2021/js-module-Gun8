@@ -218,12 +218,15 @@ export default class Page {
 
     const itemList = document.querySelector('.item-list');
     const pageData = [];
-    const limit = Math.min(this.pageLimit, this.results);
+
     const start =  this.pageIndex * this.pageLimit;
-    console.log(this.pageIndex);
+    const limit = Math.min(this.pageLimit, this.results - start);
+
     for(let i = 0; i < limit; i++){
       pageData.push(this.data[i + start]);
     }
+
+    console.log(pageData);
 
     this.components.cardList = new CardsList({data: pageData,Component: Card});
 
@@ -236,7 +239,7 @@ export default class Page {
 
   updatePagination = () => {
     const pagination = document.querySelector('.pagination');
-    const totalPages = this.results > this.pageLimit ? Math.trunc(this.results/this.pageLimit) : 1;
+    const totalPages = Math.ceil(this.results/this.pageLimit);
 
     this.components.pagination = new Pagination({totalPages});
     this.subElements.pagination = this.components.pagination.subElements;
