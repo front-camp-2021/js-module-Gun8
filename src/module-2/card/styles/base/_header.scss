@@ -1,0 +1,60 @@
+@use './colors' as *;
+@use './utils' as *;
+
+.header{
+  margin-top: 1.5rem;
+}
+
+.logo{
+  @extend %vertical-align;
+
+  &__name{
+    font-size: 3rem;
+    margin: 0 0 0 1.375rem;
+    font-weight: 600;
+    color: $text-secondary;
+  }
+}
+
+.breadcrumb {
+  display: flex;
+  padding: 0;
+  margin-top: 2rem;
+
+  &__item {
+    list-style-type: none;
+    position: relative;
+    margin-left: 2.625rem;
+    @extend %vertical-align;
+
+    &:first-child{
+      margin: 0;
+    }
+
+    &::after{
+      content: "";
+      @include bg-img-centered("img/chevrons-right.svg",1rem,100%);
+      position: absolute;
+      right: -1.8rem;
+    }
+
+    &:last-child{
+      a{
+        cursor: text;
+      }
+
+      &::after{
+        content: none;
+      }
+    }
+
+    a{
+      text-decoration: none;
+      color: $text-secondary;
+    }
+
+    &_cur-page a{
+      color: $text-primary;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+@use './colors' as *;
+
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0 auto;
+  background: #F9F9F9;
+  width: 95%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.catalog{
+  display: flex;
+  color: $text-primary;
+}

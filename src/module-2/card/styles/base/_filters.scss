@@ -1,0 +1,110 @@
+@use './colors' as *;
+@use './utils' as *;
+
+%input-img-setting{
+  display: inline-block;
+  margin-right: 0.75rem;
+}
+
+.filters{
+  min-width: 22rem;
+  width: 30%;
+
+  &__header{
+    @extend %vertical-align;
+    justify-content: space-between;
+  }
+
+  &__name{
+    color: $text-primary;
+    margin: 0;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
+  &__hide-btn{
+    @extend %btn-pre-setting;
+    @extend %shadowed-box;
+    padding: 0.75rem 1rem;
+  }
+
+  &__content{
+    @extend %shadowed-box;
+    margin-top: 1rem;
+    padding-top: 1.188rem;
+    //height: calc(100% - 6.625rem - 1.75rem - 2px);
+  }
+
+  &__item{
+    min-width: 18rem;
+    width: 66%;
+    margin-left: 10%;
+
+    &:last-child ul{
+      border: none;
+    }
+  }
+
+  &__list-name{
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.125rem;
+  }
+
+  &__list{
+    list-style-type: none;
+    font-weight: 300;
+    font-size: 1rem;
+    margin:1rem 0 1.4rem;
+    padding: 0 0 1.75rem 0;
+    border-bottom: 1px solid #D6D6D6;
+
+    &-item{
+      @extend %vertical-align;
+      justify-content: space-between;
+      margin-bottom: 1.125rem;
+
+      input{
+        display: none;
+      }
+
+      label{
+        @extend %vertical-align;
+      }
+    }
+  }
+
+  &__radio{
+    @extend %input-img-setting;
+    @include bg-img-centered("img/circle.svg",1.188rem,1.063rem);
+
+    &_checked{
+      background-image: url("img/active-circle.svg");
+    }
+  }
+
+  &__checkbox{
+    @extend %input-img-setting;
+    @include bg-img-centered("img/square.svg",1.313rem,1.125rem);
+
+    &_checked{
+      background-image: url("img/active-square.svg");
+    }
+  }
+
+  &__val{
+    cursor: text;
+  }
+
+  &__reset-btn{
+    @extend %btn-pre-setting;
+    @extend %shadowed-box;
+    background: $bg-primary;
+    color: #FFFFFF;
+    width: 100%;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    cursor: pointer;
+  }
+}

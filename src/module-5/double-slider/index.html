@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../module-2/card/style.css">
 </head>
 <body>
 <div id="root"></div>
@@ -13,7 +14,11 @@
 <script type="module">
   import DoubleSlider from './index.js';
 
-  const slider = new DoubleSlider();
+  const slider = new DoubleSlider({
+    filterName: "Price",
+    min: 53,
+    max: 85000
+  });
 
   root.append(slider.element);
 </script>
